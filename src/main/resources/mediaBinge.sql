@@ -1,3 +1,7 @@
+
+-- ***********************************************
+-- creating tables
+-- ***********************************************
 CREATE TABLE MB_topics
 (
     topic_id NUMBER,
@@ -67,3 +71,42 @@ CREATE TABLE MB_responses
     
 
 );
+
+-- ***********************************************
+-- insert values into MB_topics
+-- ***********************************************
+INSERT INTO MB_topics values(1, 'movies');
+INSERT INTO MB_topics values(2, 'tv shows');
+INSERT INTO MB_topics values(3, 'books');
+
+
+-- ***********************************************
+-- sequences
+-- ***********************************************
+
+CREATE SEQUENCE mb_user_pk_seq
+MINVALUE 1
+MAXVALUE 999999999
+INCREMENT BY 1
+START with 1;
+
+
+
+CREATE SEQUENCE mb_post_pk_seq
+MINVALUE 1
+MAXVALUE 999999999
+INCREMENT by 1
+START with 1;
+
+CREATE SEQUENCE mb_response_pk_seq
+MINVALUE 1
+MAXVALUE 999999999
+INCREMENT by 1
+START with 1;
+
+
+CREATE SEQUENCE mb_profile_pk_seq
+MINVALUE 1
+MAXVALUE 999999999
+INCREMENT by 1
+START with 1;
